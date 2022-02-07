@@ -51,7 +51,7 @@ class IKNResUsers(models.Model):
         self.ik_notify(
             'danger',
             'Oups !',
-            "This is an Inouk Notification of type Danger!.", 
+            "This is an Inouk Notification of type Danger!. These notifications must be closed explicitly.", 
             sticky=True
         )
         self.ik_notify(

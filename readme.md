@@ -24,7 +24,7 @@ The addon adds one method to `res.users`:
         param force_icon: A Font-Awesome class that will be diplayed in the title bar (eg. fa-paw).
         param sticky: When set the notification must be explicitly closed by the user.        
         """
-````
+```
 
 Call it and the user will receive the notification.
 
