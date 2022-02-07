@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template name="Inouk Notification - Backend Assets" id="ikn_assets_backend"  inherit_id="web.assets_backend">
+		<xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/inouk_notifications/static/src/scss/notification.scss"/>
+        </xpath>
+
+		<xpath expr="//script[last()]" position="after">
+            <script type="text/javascript" src="/inouk_notifications/static/src/js/web_client.js" />
+            <script type="text/javascript" src="/inouk_notifications/static/src/js/widgets/notification.js" />
+        </xpath>
+    </template>
+</odoo>

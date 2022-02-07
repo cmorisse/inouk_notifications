@@ -1,0 +1,28 @@
+.hg/
+*.pyc
+c9.sh
+.vscode
+
+# For buildout
+.installed.cfg
+bin/
+buildout.cfg
+develop-eggs/
+downloads/
+eggs/
+etc/
+parts/
+py27/
+/upgrade.py
+.idea/
+var/
+buffer.txt
+.c9/
+__pycache__/
+# For funkloads structure
+/**/funkload/log/
+
+#Tmp
+ikpdb
+sandbox
+inouk.ikpdb
