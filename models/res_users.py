@@ -28,12 +28,6 @@ class IKNResUsers(models.Model):
                     ', '.join(MESSAGE_TYPES),
                 )
             )
-
-        if not self.env.user._is_admin():
-            raise exceptions.UserError(
-                "Only administrators are allowed to send notifications"
-            )
-
         _message = {
             "type": message_type,
             "message": message,
@@ -48,6 +42,12 @@ class IKNResUsers(models.Model):
 
     def btn_test_ik_notifications(self):
         self.ensure_one()
+
+        if not self.env.user._is_admin():
+            raise exceptions.UserError(
+                "Only administrators are allowed to send Test notifications !"
+            )
+
         self.ik_notify(
             'danger',
             'Oups !',
